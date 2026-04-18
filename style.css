@@ -1,0 +1,243 @@
+/* 1. Thiết lập cơ bản */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e1d7d7;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* 2. Tiêu đề và Thanh tìm kiếm */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #e9edea 0%, #0a0a0a 100%);
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 30px; */
+}
+
+header h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  letter-spacing: 4px;
+  color: #ebe1dd;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.search-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+#searchInput:focus {
+  border-color: #00e5ff;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+}
+
+/* 3. Lưới hiển thị Card (Grid) */
+.gallery-grid {
+  display: grid;
+  /* Tự nhảy số cột tùy theo độ rộng màn hình */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* 4. Hiệu ứng thẻ Card */
+.card {
+  background: #161616;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #222;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #00e5ff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+.card:active {
+  transform: scale(0.96);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  background: #222;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s ease;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Giới hạn 2 dòng chữ mô tả */
+.card-content p {
+  font-size: 0.9rem;
+  color: #999;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Tùy chỉnh cho điện thoại */
+@media (max-width: 480px) {
+  .gallery-grid {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================================
+   5. FOOTER STYLES
+   ========================================= */
+.site-footer {
+  background: linear-gradient(180deg, #161616 0%, #0a0a0a 100%);
+  color: #ccc;
+  padding: 60px 20px 20px;
+  margin-top: 50px;
+  border-top: 1px solid #333;
+}
+
+.footer-container {
+  max-width: 1400px; /* Bằng với max-width của grid chứa card */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Đường gạch chân trang trí dưới tiêu đề */
+.footer-section h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 50px;
+  height: 2px;
+  background-color: #00e5ff;
+  transition: width 0.3s ease;
+}
+
+.footer-section:hover h3::after {
+  width: 100%;
+}
+
+.footer-section p {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Định dạng tên thành viên */
+.footer-section .name {
+  font-weight: bold;
+  color: #ebe1dd;
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+/* Định dạng link và email */
+.footer-section a {
+  color: #999;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+/* Hiệu ứng di chuột vào link */
+.footer-section a:hover {
+  color: #00e5ff;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+  transform: translateX(5px);
+  display: inline-block;
+}
+
+/* Phần bản quyền dưới cùng */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #222;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Responsive cho điện thoại: căn giữa toàn bộ nội dung footer */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+
+  .footer-section h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-section:hover h3::after {
+    width: 50px; /* Giữ nguyên độ dài gạch chân trên mobile để không bị lỗi layout */
+  }
+
+  .footer-section ul li {
+    align-items: center;
+  }
+}
