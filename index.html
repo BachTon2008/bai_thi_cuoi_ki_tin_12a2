@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khám Phá 63 Tỉnh Thành Việt Nam</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./anh/logo.jpeg" alt="Logo" class="logo-img" />
+          <span class="logo-text">Vietnam Discovery</span>
+        </div>
+        <ul class="nav-menu">
+          <li class="active" data-region="all">Tất cả</li>
+          <li data-region="Bắc">Miền Bắc</li>
+          <li data-region="Trung">Miền Trung</li>
+          <li data-region="Nam">Miền Nam</li>
+        </ul>
+      </nav>
+
+      <div class="header-content">
+        <h1>KHÁM PHÁ VẺ ĐẸP<br /><span>63 TỈNH THÀNH</span></h1>
+        <p class="header-subtitle">
+          Hành trình trải nghiệm dải đất hình chữ S từ Bắc chí Nam
+        </p>
+
+        <div class="search-container">
+          <svg
+            class="search-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Tìm kiếm tỉnh thành (vd: Hưng Yên, Hà Nội)..."
+          />
+        </div>
+      </div>
+    </header>
+
+    <main class="gallery-grid" id="galleryGrid">
+      <div class="card" data-name="An Giang" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/angiang.jpeg" alt="An Giang" />
+        </div>
+        <div class="card-content">
+          <h2>An Giang</h2>
+          <p>Rừng tràm Trà Sư, Núi Cấm...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Bà Rịa – Vũng Tàu" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/bariavungtau.jpeg" alt="Vũng Tàu" />
+        </div>
+        <div class="card-content">
+          <h2>Bà Rịa – Vũng Tàu</h2>
+          <p>Bãi Sau, Tượng Chúa Kitô Vua...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Bắc Giang" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/bacgiang.jpeg" alt="Bắc Giang" />
+        </div>
+        <div class="card-content">
+          <h2>Bắc Giang</h2>
+          <p>Vải thiều Lục Ngạn, Chùa Vĩnh Nghiêm...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Bắc Kạn" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/backan.jpeg" alt="Bắc Kạn" />
+        </div>
+        <div class="card-content">
+          <h2>Bắc Kạn</h2>
+          <p>Hồ Ba Bể, Động Puông...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Bạc Liêu" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/baclieu.jpeg" alt="Bạc Liêu" />
+        </div>
+        <div class="card-content">
+          <h2>Bạc Liêu</h2>
+          <p>Nhà Công tử Bạc Liêu, Điện gió...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Bắc Ninh" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/bacninh.jpeg" alt="Bắc Ninh" />
+        </div>
+        <div class="card-content">
+          <h2>Bắc Ninh</h2>
+          <p>Dân ca Quan họ, Đền Đô...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Bến Tre" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/bentre.jpeg" alt="Bến Tre" />
+        </div>
+        <div class="card-content">
+          <h2>Bến Tre</h2>
+          <p>Xứ dừa, Cồn Phụng...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Bình Định" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/quynhon-binhdinh.jpg" alt="Bình Định" />
+        </div>
+        <div class="card-content">
+          <h2>Bình Định</h2>
+          <p>Kỳ Co, Eo Gió, Tháp Bánh Ít...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Bình Dương" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/binhduong.jpeg" alt="Bình Dương" />
+        </div>
+        <div class="card-content">
+          <h2>Bình Dương</h2>
+          <p>KDL Đại Nam, Chùa Bà Thiên Hậu...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Bình Phước" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/binhphuoc.jpeg" alt="Bình Phước" />
+        </div>
+        <div class="card-content">
+          <h2>Bình Phước</h2>
+          <p>Trảng cỏ Bù Lạch, sóc Bom Bo...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Bình Thuận" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/binhthuan.jpeg" alt="Bình Thuận" />
+        </div>
+        <div class="card-content">
+          <h2>Bình Thuận</h2>
+          <p>Mũi Né, Đảo Phú Quý...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Cà Mau" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/camau.jpeg" alt="Cà Mau" />
+        </div>
+        <div class="card-content">
+          <h2>Cà Mau</h2>
+          <p>Đất Mũi, Rừng U Minh Hạ...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Cần Thơ" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/cantho.jpeg" alt="Cần Thơ" />
+        </div>
+        <div class="card-content">
+          <h2>Cần Thơ</h2>
+          <p>Chợ nổi Cái Răng, Bến Ninh Kiều...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Cao Bằng" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/cao_bang.jpeg" alt="Cao Bằng" />
+        </div>
+        <div class="card-content">
+          <h2>Cao Bằng</h2>
+          <p>Thác Bản Giốc, Suối Lê-nin...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Đà Nẵng" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/da_nang.jpeg" alt="Đà Nẵng" />
+        </div>
+        <div class="card-content">
+          <h2>Đà Nẵng</h2>
+          <p>Cầu Vàng, Bà Nà Hills, Bán đảo Sơn Trà...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Đắk Lắk" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/dak_lak.jpeg" alt="Đắk Lắk" />
+        </div>
+        <div class="card-content">
+          <h2>Đắk Lắk</h2>
+          <p>Buôn Đôn, Thác Dray Nur...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Đắk Nông" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/dak_nong.jpeg" alt="Đắk Nông" />
+        </div>
+        <div class="card-content">
+          <h2>Đắk Nông</h2>
+          <p>Hồ Tà Đùng, thác Lưu Ly...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Điện Biên" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/dien_bien.jpeg" alt="Điện Biên" />
+        </div>
+        <div class="card-content">
+          <h2>Điện Biên</h2>
+          <p>Cánh đồng Mường Thanh, Đèo Pha Đin...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Đồng Nai" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/dong_nai.jpeg" alt="Đồng Nai" />
+        </div>
+        <div class="card-content">
+          <h2>Đồng Nai</h2>
+          <p>Thác Giang Điền, KDL Bửu Long...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Đồng Tháp" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/dong_thap.jpeg" alt="Đồng Tháp" />
+        </div>
+        <div class="card-content">
+          <h2>Đồng Tháp</h2>
+          <p>Làng hoa Sa Đéc, Sen Hồng Tháp Mười...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Gia Lai" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/gia_lai.jpeg" alt="Gia Lai" />
+        </div>
+        <div class="card-content">
+          <h2>Gia Lai</h2>
+          <p>Biển Hồ, Thác Phú Cường...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Hà Giang" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/ha_giang.jpeg" alt="Hà Giang" />
+        </div>
+        <div class="card-content">
+          <h2>Hà Giang</h2>
+          <p>Mã Pí Lèng, Cột cờ Lũng Cú...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Hà Nam" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/ha_nam.jpeg" alt="Hà Nam" />
+        </div>
+        <div class="card-content">
+          <h2>Hà Nam</h2>
+          <p>Chùa Tam Chúc, Kẽm Trống...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Hà Nội" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/ha_noi.jpeg" alt="Hà Nội" />
+        </div>
+        <div class="card-content">
+          <h2>Hà Nội</h2>
+          <p>Hồ Gươm, Phố Cổ, Văn Miếu...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Hà Tĩnh" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/ha_tinh.jpeg" alt="Hà Tĩnh" />
+        </div>
+        <div class="card-content">
+          <h2>Hà Tĩnh</h2>
+          <p>Chùa Hương Tích, Biển Thiên Cầm...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Hải Dương" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/hai_duong.jpeg" alt="Hải Dương" />
+        </div>
+        <div class="card-content">
+          <h2>Hải Dương</h2>
+          <p>Đảo Cò Chi Lăng, Côn Sơn - Kiếp Bạc...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Hải Phòng" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/hai_phong.webp" alt="Hải Phòng" />
+        </div>
+        <div class="card-content">
+          <h2>Hải Phòng</h2>
+          <p>Đảo Cát Bà, Vịnh Lan Hạ...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Hậu Giang" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/hau_giang.jpeg" alt="Hậu Giang" />
+        </div>
+        <div class="card-content">
+          <h2>Hậu Giang</h2>
+          <p>Chợ nổi Ngã Bảy, Lung Ngọc Hoàng...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Hòa Bình" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/hoa_binh.jpeg" alt="Hòa Bình" />
+        </div>
+        <div class="card-content">
+          <h2>Hòa Bình</h2>
+          <p>Thung lũng Mai Châu, Kim Bôi...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Hưng Yên" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/hung_yen.jpeg" alt="Hưng Yên" />
+        </div>
+        <div class="card-content">
+          <h2>Hưng Yên</h2>
+          <p>Phố Hiến, Nhãn lồng, Chùa Chuông...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Khánh Hòa" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/khanh_hoa.jpeg" alt="Nha Trang" />
+        </div>
+        <div class="card-content">
+          <h2>Khánh Hòa</h2>
+          <p>Vịnh Nha Trang, Tháp Bà Ponagar...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Kiên Giang" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/kien_giang.jpg" alt="Phú Quốc" />
+        </div>
+        <div class="card-content">
+          <h2>Kiên Giang</h2>
+          <p>Đảo Ngọc Phú Quốc, Hà Tiên...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Kon Tum" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/kon_tum.jpeg" alt="Kon Tum" />
+        </div>
+        <div class="card-content">
+          <h2>Kon Tum</h2>
+          <p>Nhà thờ Gỗ, Măng Đen...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Lai Châu" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/lai_chau.jpeg" alt="Lai Châu" />
+        </div>
+        <div class="card-content">
+          <h2>Lai Châu</h2>
+          <p>Đèo Ô Quy Hồ, Cánh đồng Mường Than...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Lâm Đồng" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/lam_dong.jpeg" alt="Đà Lạt" />
+        </div>
+        <div class="card-content">
+          <h2>Lâm Đồng</h2>
+          <p>Thành phố Đà Lạt ngàn hoa...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Lạng Sơn" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/lang_son.webp" alt="Lạng Sơn" />
+        </div>
+        <div class="card-content">
+          <h2>Lạng Sơn</h2>
+          <p>Đỉnh Mẫu Sơn, Ải Chi Lăng...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Lào Cai" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/lao_cai.jpeg" alt="Sapa" />
+        </div>
+        <div class="card-content">
+          <h2>Lào Cai</h2>
+          <p>Sapa, Đỉnh Fansipan...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Long An" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/long_an.jpeg" alt="Long An" />
+        </div>
+        <div class="card-content">
+          <h2>Long An</h2>
+          <p>Làng nổi Tân Lập, Cần Giuộc...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Nam Định" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/nam_dinh.jpeg" alt="Nam Định" />
+        </div>
+        <div class="card-content">
+          <h2>Nam Định</h2>
+          <p>Đền Trần, Nhà thờ đổ Hải Lý...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Nghệ An" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/nghe_an.jpeg" alt="Nghệ An" />
+        </div>
+        <div class="card-content">
+          <h2>Nghệ An</h2>
+          <p>Quê Bác, Biển Cửa Lò...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Ninh Bình" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/ninh_binh.jpeg" alt="Ninh Bình" />
+        </div>
+        <div class="card-content">
+          <h2>Ninh Bình</h2>
+          <p>Tràng An, Bái Đính, Tam Cốc...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Ninh Thuận" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/ninh_thuan.jpeg" alt="Ninh Thuận" />
+        </div>
+        <div class="card-content">
+          <h2>Ninh Thuận</h2>
+          <p>Vịnh Vĩnh Hy, Tháp chàm Po Klong Garai...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Phú Thọ" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/phu_tho.jpeg" alt="Phú Thọ" />
+        </div>
+        <div class="card-content">
+          <h2>Phú Thọ</h2>
+          <p>Đền Hùng, Đầm Ao Châu...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Phú Yên" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/phu_yen.jpg" alt="Phú Yên" />
+        </div>
+        <div class="card-content">
+          <h2>Phú Yên</h2>
+          <p>Gành Đá Đĩa, Bãi Xép...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Quảng Bình" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/quang_binh.jpeg" alt="Quảng Bình" />
+        </div>
+        <div class="card-content">
+          <h2>Quảng Bình</h2>
+          <p>Phong Nha - Kẻ Bàng, Hang Sơn Đoòng...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Quảng Nam" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/quang_nam.jpeg" alt="Hội An" />
+        </div>
+        <div class="card-content">
+          <h2>Quảng Nam</h2>
+          <p>Phố cổ Hội An, Thánh địa Mỹ Sơn...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Quảng Ngãi" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/quang_ngai.jpg" alt="Quảng Ngãi" />
+        </div>
+        <div class="card-content">
+          <h2>Quảng Ngãi</h2>
+          <p>Đảo Lý Sơn, Biển Mỹ Khê...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Quảng Ninh" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/quang_ninh.jpeg" alt="Hạ Long" />
+        </div>
+        <div class="card-content">
+          <h2>Quảng Ninh</h2>
+          <p>Vịnh Hạ Long, Yên Tử...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Quảng Trị" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/quang_tri.jpeg" alt="Quảng Trị" />
+        </div>
+        <div class="card-content">
+          <h2>Quảng Trị</h2>
+          <p>Thành cổ Quảng Trị, Cầu Hiền Lương...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Sóc Trăng" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/soc_trang.jpeg" alt="Sóc Trăng" />
+        </div>
+        <div class="card-content">
+          <h2>Sóc Trăng</h2>
+          <p>Chùa Dơi, Chùa Chén Kiểu...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Sơn La" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/son_la.jpeg" alt="Sơn La" />
+        </div>
+        <div class="card-content">
+          <h2>Sơn La</h2>
+          <p>Mộc Châu, Thác Dải Yếm...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Tây Ninh" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/tay_ninh.jpeg" alt="Tây Ninh" />
+        </div>
+        <div class="card-content">
+          <h2>Tây Ninh</h2>
+          <p>Núi Bà Đen, Tòa thánh Tây Ninh...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Thái Bình" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/thai_binh.jpeg" alt="Thái Bình" />
+        </div>
+        <div class="card-content">
+          <h2>Thái Bình</h2>
+          <p>Chùa Keo, Biển Đồng Châu...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Thái Nguyên" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/thai_nguyen.jpeg" alt="Thái Nguyên" />
+        </div>
+        <div class="card-content">
+          <h2>Thái Nguyên</h2>
+          <p>Đồi chè Tân Cương, Hồ Núi Cốc...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Thanh Hóa" data-region="Trung">
+        <div class="card-image">
+          <img src="./anh/thanh_hoa.jpeg" alt="Thanh Hóa" />
+        </div>
+        <div class="card-content">
+          <h2>Thanh Hóa</h2>
+          <p>Pù Luông, Sầm Sơn, Thành Nhà Hồ...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Thừa Thiên Huế" data-region="Trung">
+        <div class="card-image"><img src="./anh/hue.jpeg" alt="Huế" /></div>
+        <div class="card-content">
+          <h2>Thừa Thiên Huế</h2>
+          <p>Đại Nội Huế, Lăng Tẩm, Chùa Thiên Mụ...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Tiền Giang" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/tien_giang.jpeg" alt="Tiền Giang" />
+        </div>
+        <div class="card-content">
+          <h2>Tiền Giang</h2>
+          <p>Chùa Vĩnh Tràng, Chợ nổi Cái Bè...</p>
+        </div>
+      </div>
+      <div class="card" data-name="TP Hồ Chí Minh" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/thanh_pho_ho_chi_minh.jpeg" alt="TP HCM" />
+        </div>
+        <div class="card-content">
+          <h2>TP Hồ Chí Minh</h2>
+          <p>Dinh Độc Lập, Chợ Bến Thành...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Trà Vinh" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/tra_vinh.jpeg" alt="Trà Vinh" />
+        </div>
+        <div class="card-content">
+          <h2>Trà Vinh</h2>
+          <p>Chùa Hang, Ao Bà Om...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Tuyên Quang" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/tuyen_quang.jpeg" alt="Tuyên Quang" />
+        </div>
+        <div class="card-content">
+          <h2>Tuyên Quang</h2>
+          <p>Na Hang, Tân Trào...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Vĩnh Long" data-region="Nam">
+        <div class="card-image">
+          <img src="./anh/vinh_long.jpeg" alt="Vĩnh Long" />
+        </div>
+        <div class="card-content">
+          <h2>Vĩnh Long</h2>
+          <p>Cầu Mỹ Thuận, Văn Thánh Miếu...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Vĩnh Phúc" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/vinh_phuc.jpeg" alt="Tam Đảo" />
+        </div>
+        <div class="card-content">
+          <h2>Vĩnh Phúc</h2>
+          <p>Tam Đảo, Tây Thiên...</p>
+        </div>
+      </div>
+      <div class="card" data-name="Yên Bái" data-region="Bắc">
+        <div class="card-image">
+          <img src="./anh/yen_bai.jpeg" alt="Yên Bái" />
+        </div>
+        <div class="card-content">
+          <h2>Yên Bái</h2>
+          <p>Mù Cang Chải, Hồ Thác Bà...</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="style.js"></script>
+  </body>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section about-group">
+        <h3>Thông Tin Nhóm</h3>
+        <p><strong>Tên nhóm:</strong> Nhóm ..... - Khám Phá Việt Nam</p>
+        <p><strong>Lớp:</strong> 12A2 - THPT Trưng Vương</p>
+        <p>
+          Dự án tổng hợp khám phá và giới thiệu vẻ đẹp du lịch, văn hóa của 63
+          tỉnh thành trên dải đất hình chữ S.
+        </p>
+      </div>
+
+      <div class="footer-section members">
+        <h3>Thành Viên</h3>
+        <ul>
+          <li>
+            <span class="name">Tôn Lâm Bách (Nhóm trưởng)</span>
+            <a href="mailto:bachtonlam13@gmail.com" class="email"
+              >bachtonlam13@gmail.com</a
+            >
+          </li>
+          <li>
+            <span class="name">Nguyễn Bảo Việt </span>
+          </li>
+          <li>
+            <span class="name">Nguyễn Ngọc Ánh </span>
+          </li>
+          <li>
+            <span class="name">Nguyễn Hà Trang </span>
+          </li>
+          <li>
+            <span class="name">Nguyễn Hoàng Linh </span>
+          </li>
+          <li>
+            <span class="name">Ngô Quốc Bảo</span>
+          </li>
+          <li>
+            <span class="name">Lê Thanh Thảo </span>
+          </li>
+          <li>
+            <span class="name">Nguyễn Khánh Huyền </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section links">
+        <h3>Liên Kết</h3>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Bản đồ tương tác</a></li>
+          <li><a href="#">Nguồn tài liệu tham khảo</a></li>
+          <li><a href="#">Đóng góp ý kiến</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; 2026 Dự án Khám Phá 63 Tỉnh Thành. Thiết kế bởi Tôn Lâm Bách và
+        các thành viên.
+      </p>
+    </div>
+  </footer>
+</html>
